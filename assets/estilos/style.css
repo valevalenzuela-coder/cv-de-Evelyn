@@ -1,0 +1,82 @@
+:root 
+{
+  --morado: #6a0dad;
+  --rosa: #ff69b4;
+}
+
+html 
+{
+  scroll-behavior: smooth; /* Scroll suave al hacer clic en links */
+}
+
+body 
+{
+  background-color: #fdf7fb;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.bg-custom 
+{
+  background: linear-gradient(90deg, var(--morado), var(--rosa));
+}
+.navbar-brand, 
+.nav-link 
+{
+  color: white !important;
+  font-weight: bold;
+}
+.nav-link:hover 
+{
+  text-decoration: underline;
+}
+.nav-link.active 
+{
+  text-decoration: underline;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler 
+{
+  border-color: white;
+}
+.navbar-toggler-icon 
+{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Títulos de secciones */
+.section-title 
+{
+  color: var(--morado);
+  border-bottom: 3px solid var(--rosa);
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Tarjetas de portafolio */
+.card 
+{
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover 
+{
+  transform: scale(1.05);
+}
+.carousel-inner img 
+{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+}
+/* Footer */
+footer 
+{
+  background: linear-gradient(90deg, var(--morado), var(--rosa));
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
